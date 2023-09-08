@@ -1,0 +1,95 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@500&family=Poppins:wght@300&family=Roboto:wght@500;700&family=Source+Code+Pro:ital@1&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body,html{
+    height: 100%;
+    width: 100%;
+    background-color: red;
+    font-family: 'Poppins', sans-serif;
+
+}
+body{
+    display: flex;
+    align-items: center;
+    justify-content: center
+}
+
+#Accordian{
+    width: 700px;
+}
+
+#Accordian ul {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 0.1rem;
+}
+
+#Accordian ul li{
+    list-style-type: none;
+    background-color: bisque;
+    position:relative;
+
+}
+
+
+
+#Accordian ul li input[type="radio"]{
+    display: none;
+}
+
+#Accordian ul li label{
+    font-size: 1.5rem;
+    display: block;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border: 1px solid red;
+    padding: 1rem ;
+    color: rgb(5, 170, 247);
+
+}
+
+#Accordian ul li label:hover{
+    cursor: pointer;
+}
+
+#Accordian ul li label span{
+    font-size: 1.8rem;
+}
+
+#Accordian ul li .content{
+
+    max-height: 0;
+    transition: all ease-in-out 0.5s ;
+    overflow: hidden;
+
+}
+
+#Accordian ul li .content p{
+    padding: 1rem;
+    
+}
+
+#Accordian ul li label + input[type="radio"]:checked +.content{
+    max-height: 100px;
+}
+
+@media (320px <= width <=480px){
+    
+#Accordian ul li label + input[type="radio"]:checked +.content{
+    max-height: 250px;
+}
+}
+
+@media (481px <= width <=576px){
+    
+#Accordian ul li label + input[type="radio"]:checked +.content{
+    max-height: 250px;
+}
+}
