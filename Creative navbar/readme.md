@@ -2,6 +2,9 @@
 
 This is a simple creative navbar project created using HTML, CSS, and JavaScript. It features a visually appealing navigation bar with interactive animations.
 
+![sample website image1](./image.png)
+
+
 ## Table of Contents
 
 - [Demo](#demo)
@@ -12,7 +15,7 @@ This is a simple creative navbar project created using HTML, CSS, and JavaScript
 
 ## Demo
 
-You can see a live demo of this project [here](https://example.com).
+You can see a live demo of this project [here](https://lighthearted-puppy-d6d9f1.netlify.app/).
 
 ## Features
 
