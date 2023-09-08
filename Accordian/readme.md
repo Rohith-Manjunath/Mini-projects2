@@ -14,7 +14,7 @@ This is a simple accordion project created with HTML and CSS. It allows you to t
 
 ## Demo
 
-You can see a live demo of the project here: [Demo Link](#)
+You can see a live demo of this project [here](https://prismatic-shortbread-18a1f2.netlify.app/).
 
 ## Features
 
