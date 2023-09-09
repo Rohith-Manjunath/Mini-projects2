@@ -55,11 +55,12 @@ Enjoy real-time chat with others!
 
 ## Technologies Used
 
--Socket.IO: For real-time communication between the server and clients.
--Express.js: As the web server framework.
--HTML/CSS: For the front-end user interface.
--JavaScript: For client-side scripting.
--Node.js: As the runtime environment.
+- Socket.IO: For real-time communication between the server and clients.
+- Express.js: As the web server framework.
+- HTML/CSS: For the front-end user interface.
+- JavaScript: For client-side scripting.
+- Node.js: As the runtime environment.
+
 
 
 
