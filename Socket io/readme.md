@@ -1,3 +1,8 @@
+
+# Project Title
+
+A brief description of what this project does and who it's for
+
 # Real-Time Chat Application with Socket.IO
 
 ![App Screenshot](./assets/images/image.png)
@@ -32,22 +37,22 @@ You can try out the live demo of the chat application [here](https://chat-applic
 
 To run the chat application locally, follow these steps:
 
-```bash
-# Clone the repository
-git clone https://github.com/Rohith-Manjunath/Mini-projects2.git
 
-# Navigate to the project directory
-cd Socket io
+### Clone the repository
+    
+    git clone https://github.com/Rohith-Manjunath/Mini-projects2.git
 
-# Install the required dependencies
-npm install
+### Navigate to the project directory
+    cd Socket io
+
+### Install the required dependencies
+    npm install
 
 
-Usage
-Start the application:
+## Usage
 
-# Start the application
-npm start
+### Start the application
+    npm start
 
 Open a web browser and go to http://localhost:2000.
 
@@ -56,7 +61,7 @@ Enter your name and start chatting in one of the available chat rooms.
 Enjoy real-time chat with others!
 
 
-Technologies Used:
+## Technologies Used
 
 The following technologies were used for building this app:
 
