@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Socket.IO Chat</title>
+    <script src="/socket.io/socket.io.js"></script>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 0;
+        background-color: #f0f0f0;
+      }
+
+      h1 {
+        background-color: #333;
+        color: #fff;
+        padding: 10px;
+        text-align: center;
+      }
+
+      #chat-container {
+        max-width: 600px;
+        margin: 20px auto;
+        background-color: #fff;
+        border-radius: 5px;
+        box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+      }
+
+      #messages {
+        padding: 10px;
+        border-bottom: 1px solid #ccc;
+        max-height: 300px;
+        overflow-y: scroll;
+      }
+
+      #messages div {
+        margin-bottom: 10px;
+      }
+
+      form {
+        padding: 10px;
+        display: flex;
+        justify-content: space-between;
+      }
+
+      input[type="text"] {
+        flex: 1;
+        padding: 10px;
+        border: 1px solid #ccc;
+        border-radius: 3px;
+        margin-right: 10px;
+      }
+
+      button {
+        background-color: #333;
+        color: #fff;
+        border: none;
+        border-radius: 3px;
+        padding: 10px 15px;
+        cursor: pointer;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Socket.IO Chat</h1>
+    <div id="chat-container">
+      <div id="messages"></div>
+      <form id="form" action="">
+        <input id="name" type="text" placeholder="Your Name" /><br />
+        <input
+          id="message"
+          type="text"
+          placeholder="Type your message"
+          autocomplete="off"
+        />
+        <button>Send</button>
+      </form>
+    </div>
+    <script>
+      const socket = io();
+
+      const form = document.getElementById("form");
+      const nameInput = document.getElementById("name");
+      const messageInput = document.getElementById("message");
+      const messages = document.getElementById("messages");
+
+      form.addEventListener("submit", (e) => {
+        e.preventDefault();
+        const name = nameInput.value;
+        const message = messageInput.value;
+        if (name && message) {
+          socket.emit("chat message", { name, message });
+          messageInput.value = "";
+        }
+      });
+
+      socket.on("chat message", (data) => {
+        const { name, message } = data;
+        const messageElement = document.createElement("div");
+        messageElement.innerHTML = `<strong>${name}:</strong> ${message}`;
+        messages.appendChild(messageElement);
+      });
+    </script>
+  </body>
+</html>
