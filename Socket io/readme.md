@@ -32,7 +32,7 @@ You can try out the live demo of the chat application [here](https://chat-applic
 
 To run the chat application locally, follow these steps:
 
-```bash
+
 # Clone the repository
 git clone https://github.com/Rohith-Manjunath/Mini-projects2.git
 
@@ -45,8 +45,6 @@ npm install
 ## Usage
 
 Start the application:
-
-```bash
 npm start
 
 Open a web browser and go to http://localhost:2000.
