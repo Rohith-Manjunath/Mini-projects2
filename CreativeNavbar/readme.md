@@ -28,10 +28,15 @@ You can see a live demo of this project [here](https://lighthearted-puppy-d6d9f1
 
 To get a copy of this project up and running on your local machine, follow these steps:
 
-1. Clone this repository to your local machine using:
+### Clone this repository to your local machine using:
 
-   ```bash
+   
    git clone https://github.com/Rohith-Manjunath/Mini-projects2.git
+
+### Navigate to the project directory
+
+    cd Mini-projects2
+    cd CreativeNavbar
 
 ## Usage
 
