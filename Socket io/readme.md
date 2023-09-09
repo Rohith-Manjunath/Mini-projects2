@@ -32,7 +32,7 @@ You can try out the live demo of the chat application [here](https://chat-applic
 
 To run the chat application locally, follow these steps:
 
-
+```bash
 # Clone the repository
 git clone https://github.com/Rohith-Manjunath/Mini-projects2.git
 
@@ -42,9 +42,11 @@ cd Socket io
 # Install the required dependencies
 npm install
 
-## Usage
 
+Usage
 Start the application:
+
+# Start the application
 npm start
 
 Open a web browser and go to http://localhost:2000.
@@ -53,18 +55,13 @@ Enter your name and start chatting in one of the available chat rooms.
 
 Enjoy real-time chat with others!
 
-## Technologies Used
 
-- Socket.IO: For real-time communication between the server and clients.
+Technologies Used:
+
+The following technologies were used for building this app:
+
+- Socket.IO: For real-time communication between - the server and clients.
 - Express.js: As the web server framework.
 - HTML/CSS: For the front-end user interface.
 - JavaScript: For client-side scripting.
 - Node.js: As the runtime environment.
-
-
-
-
-
-
-
-
