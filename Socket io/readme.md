@@ -37,7 +37,6 @@ To run the chat application locally, follow these steps:
 git clone https://github.com/Rohith-Manjunath/Mini-projects2.git
 
 # Navigate to the project directory
-```bash
 cd Socket io
 
 # Install the required dependencies
