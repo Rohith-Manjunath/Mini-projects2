@@ -43,7 +43,8 @@ To run the chat application locally, follow these steps:
     git clone https://github.com/Rohith-Manjunath/Mini-projects2.git
 
 ### Navigate to the project directory
-    cd Socket io
+    cd Mini-projects2
+    cd SocketIO
 
 ### Install the required dependencies
     npm install
