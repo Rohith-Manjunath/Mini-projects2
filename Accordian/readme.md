@@ -31,8 +31,9 @@ You can see a live demo of this project [here](https://prismatic-shortbread-18a1
 
 2. Navigate to the project directory:
 
-     cd Mini-projects2
-     cd Accordian 
+       cd Mini-projects2
+       cd Accordian
+      
    
 
 3. Open the `index.html` file in your web browser to view the accordion in action.
