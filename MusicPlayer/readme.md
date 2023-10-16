@@ -46,4 +46,4 @@ A responsive and feature-rich music player application built with HTML, CSS, and
 
 ## Live Demo
 
-Check out the live demo of the Recipe Sharing Full Stack App [here](https://music-mania-app.netlify.app/).
+Check out the live demo of the Music Mania App [here](https://music-mania-app.netlify.app/).
