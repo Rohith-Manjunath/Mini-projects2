@@ -11,6 +11,10 @@ let dot = document.querySelector(".dot");
 let isPlaying = false;
 let index = 0;
 const progressbar = document.querySelector(".progressbar");
+const playlist = document.querySelector(".fa-list");
+const playlist_songs = document.querySelector(".songs");
+let playlistVisibility = true;
+const songTitles = document.querySelectorAll(".song-title");
 
 const songs = [
   {
@@ -30,6 +34,30 @@ const songs = [
     title: "Laal Ishq",
     song: "./assets/Music/LAAL_ISHQ_-_Full_Audio_Song___Deepika_Padukone___Ranveer_Singh___Goliyon_Ki_Raasleela_Ram-leela(256k).mp3",
     img: "./assets/images/Laal_isqh.jpg",
+  },
+  {
+    artist: "Taaruk Raina",
+    title: "Kho Gaye",
+    song: "./assets/Music/Kho_gaye.mp3",
+    img: "./assets/images/kho_gaye.jpg",
+  },
+  {
+    artist: "Arijit Singh",
+    title: "Aayat",
+    song: "./assets/Music/Lyrical__Aayat___Full_Song_with_Lyrics___Bajirao_Mastani(256k).mp3",
+    img: "./assets/images/aayat.jpg",
+  },
+  {
+    artist: "K.S Harisankar",
+    title: "Pavizha Mazha",
+    song: "./assets/Music/pavizha.mp3",
+    img: "./assets/images/pavizha.jpg",
+  },
+  {
+    artist: "Javed Bashir",
+    title: "Aaj Ibaadat",
+    song: "./assets/Music/Aaj_Ibaadat__Lyrical_Full_Song____Bajirao_Mastani___Ranveer_Singh___Deepika_Padukone(256k).mp3",
+    img: "./assets/images/aayat.jpg",
   },
 ];
 
@@ -78,9 +106,11 @@ const nextSong = () => {
     index = 0;
     loadSongs(songs[index]);
     PlayMusic();
+    isPlaying = true;
   } else {
     loadSongs(songs[index]);
     PlayMusic();
+    isPlaying = true;
   }
 };
 
@@ -165,4 +195,35 @@ document.addEventListener("keyup", (event) => {
     // Skip backward by 10 seconds
     music.currentTime -= 10;
   }
+});
+
+playlist.addEventListener("click", () => {
+  playlistVisibility
+    ? (playlist_songs.style.display = "block")
+    : (playlist_songs.style.display = "none");
+  playlistVisibility = !playlistVisibility;
+});
+
+songTitles.forEach((title, i) => {
+  title.addEventListener("click", (event) => {
+    const clickedSongTitle = event.target.textContent.toUpperCase();
+    const foundSong = songs.find(
+      (song) => song.title.toUpperCase() === clickedSongTitle
+    );
+    if (foundSong) {
+      console.log("Found song in playlist:", foundSong.song);
+      artist.textContent = foundSong.artist;
+      songTitle.textContent = foundSong.title;
+      music.src = `${foundSong.song}`;
+      img.src = `${foundSong.img}`;
+      index = i;
+      playlist_songs.style.display = "none";
+
+      PlayMusic();
+      isPlaying = true;
+      playlistVisibility = !playlistVisibility;
+    } else {
+      console.log("Song not found in playlist");
+    }
+  });
 });

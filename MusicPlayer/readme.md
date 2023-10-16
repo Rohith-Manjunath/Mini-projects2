@@ -18,11 +18,13 @@ A responsive and feature-rich music player application built with HTML, CSS, and
 - **Volume Control:** Adjust the volume to your preference.
 - **Progress Bar:** Visualize the current position of the song with a progress bar.
 - **Automatic Transition:** Move to the next track seamlessly when the current song ends.
+- **Playlist Selection:** Create and manage your playlist. Select songs from your playlist to play.
 
 ## Screenshots
 
 ![webiste1](./assets/WebsiteImages/website1.png) 
-![webiste1](./assets/WebsiteImages/website2.png) 
+![webiste2](./assets/WebsiteImages/website2.png) 
+![webiste3](./assets/WebsiteImages/website3.png) 
 
 ## Installation
 
@@ -43,6 +45,8 @@ A responsive and feature-rich music player application built with HTML, CSS, and
 - Previous Track: Click the previous button or press the left arrow key.
 - Volume Control: Adjust the volume slider.
 - Seek: Click on the progress bar to skip to a specific position in the song.
+- Playlist: Click the playlist button to access music library. Select your favorite songs and artists, and enjoy a personalized music experience.
+
 
 ## Live Demo
 
