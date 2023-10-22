@@ -194,6 +194,12 @@ document.addEventListener("keyup", (event) => {
   } else if (event.key === "ArrowLeft") {
     // Skip backward by 10 seconds
     music.currentTime -= 10;
+  } else if (event.key === "ArrowUp") {
+    // Increase volume by 10%
+    music.volume = Math.min(1, music.volume + 0.1);
+  } else if (event.key === "ArrowDown") {
+    // Decrease volume by 10%
+    music.volume = Math.max(0, music.volume - 0.1);
   }
 });
 
